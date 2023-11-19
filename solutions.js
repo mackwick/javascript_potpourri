@@ -74,9 +74,5 @@ const inTheRed = (money) => {
 
 console.log(inTheRed(bankTotal))
 
-//********************************* */
-// MADLIBS
-//********************************* */
-
 
 
