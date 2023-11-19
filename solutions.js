@@ -50,7 +50,29 @@ console.log(trollsBeGone("This website is for losers LOL"))
 // BANK ACCOUNT SUMMARY
 //********************************* */
 
+const bankInfo = {
+    savings: 100,
+    checking: 65,
+    moneyMarket: 5,
+    creditCard: -5000
+}
 
+const bankAccountSummary = (obj) => {
+    let total = 0;
+    let amounts = Object.values(obj);
+    amounts.forEach(num => {
+        total += num;
+    })
+    return total
+}
+
+let bankTotal = bankAccountSummary(bankInfo)
+
+const inTheRed = (money) => {
+    return money < 0 ? "true" : "false"
+}
+
+console.log(inTheRed(bankTotal))
 
 //********************************* */
 // MADLIBS
