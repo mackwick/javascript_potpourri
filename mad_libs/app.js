@@ -23,9 +23,7 @@ const startMadLib = () => {
     words.adverb = adv;
     const adj2 = prompt('Give me an another adjective!');
     words.anotherAdjective = adj2
-    alert(
-        `Once upon a time a group of ${words.number} General Assembly graduates got together and made a startup called ${words.adjective} Technologies. Their goal was to create smart ${words.pluralNoun}. They approached the challenge ${words.adverb}, which ultimately lead them to ${words.anotherAdjective} fame.`
-    ) 
+    alert(`Once upon a time a group of ${words.number} General Assembly graduates got together and made a startup called ${words.adjective} Technologies. Their goal was to create smart ${words.pluralNoun}. They approached the challenge ${words.adverb}, which ultimately lead them to ${words.anotherAdjective} fame.`); 
     circleBack()
 }
 
@@ -42,8 +40,7 @@ function circleBack() {
     } else if (answer.toLocaleLowerCase() === "n") {
         alert("Ok byyyyye")
     } else {
-        alert("You gotta make a choice! Please type 'y' or 'no'.");
+        alert("You gotta make a choice! Please type 'y' or 'n'.");
         circleBack()
     }
 }
-
