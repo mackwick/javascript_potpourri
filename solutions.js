@@ -69,7 +69,7 @@ const bankAccountSummary = (obj) => {
 let bankTotal = bankAccountSummary(bankInfo)
 
 const inTheRed = (money) => {
-    return money < 0 ? "true" : "false"
+    return money < 0 ? true : false
 }
 
 console.log(inTheRed(bankTotal))
