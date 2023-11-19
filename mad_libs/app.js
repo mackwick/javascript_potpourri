@@ -18,14 +18,14 @@ const startMadLib = () => {
     const adj = prompt('Give me an adjective!');
     words.adjective = adj;
     const pnoun = prompt('Give me a plural noun!');
-    words.pluralNoun = num;
+    words.pluralNoun = pnoun;
     const adv = prompt('Give me an adverb!');
     words.adverb = adv;
     const adj2 = prompt('Give me an another adjective!');
     words.anotherAdjective = adj2
-    console.log(words)
+    alert(
+        `Once upon a time a group of ${words.number} General Assembly graduates got together and made a startup called ${words.adjective} Technologies. Their goal was to create smart ${words.pluralNoun}. They approached the challenge ${words.adverb}, which ultimately lead them to ${words.anotherAdjective} fame.`
+    )
 }
-
-
 
 startMadLib()
