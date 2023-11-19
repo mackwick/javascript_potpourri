@@ -1,5 +1,5 @@
 //**************************** */
-// MAD LIPS
+// MAD LIBS
 //**************************** */
 
 //console.log("hi")
@@ -25,7 +25,25 @@ const startMadLib = () => {
     words.anotherAdjective = adj2
     alert(
         `Once upon a time a group of ${words.number} General Assembly graduates got together and made a startup called ${words.adjective} Technologies. Their goal was to create smart ${words.pluralNoun}. They approached the challenge ${words.adverb}, which ultimately lead them to ${words.anotherAdjective} fame.`
-    )
+    ) 
+    circleBack()
 }
 
 startMadLib()
+
+//**************************** */
+// HUNGRY FOR MORE?
+//**************************** */
+
+function circleBack() {
+    const answer = prompt("Do you want to play again? If yes, type 'y', if no, type 'n'.")
+    if (answer.toLowerCase() === "y") {
+        startMadLib()
+    } else if (answer.toLocaleLowerCase() === "n") {
+        alert("Ok byyyyye")
+    } else {
+        alert("You gotta make a choice! Please type 'y' or 'no'.");
+        circleBack()
+    }
+}
+
